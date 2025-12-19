@@ -22,12 +22,14 @@ class Game:
     
     def __init__(self):
         """Инициализирует игровые компоненты."""
+        
         self.menu = Menu()
         self.renderer = Renderer()
         self.input_handler = InputHandler()
 
     def start(self) -> None:
         """Запускает цикл с меню."""
+
         while True:
             self.menu.show()
             choice = self.menu.get_choice()
@@ -44,6 +46,7 @@ class Game:
         Создает лабиринт и игрока, затем управляет игровым циклом
         до тех пор, пока игрок не найдет выход или не выйдет из игры.
         """
+
         maze = Maze(21, 21)
         player = Player(1, 1)
 

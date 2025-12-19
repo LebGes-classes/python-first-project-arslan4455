@@ -18,8 +18,11 @@ class InputHandler:
         Returns:
             tuple[int, int]: Кортеж (dx, dy) представляющий направление движения
         """
+
         key = input("Ваш ход (WASD, Q): ").lower()
+
         if key == "q":
             sys.exit()
+            
         return self.MOVES.get(key, (0, 0))
 

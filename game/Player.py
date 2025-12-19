@@ -15,6 +15,7 @@ class Player:
             start_x (int): Начальная x-координата игрока
             start_y (int): Начальная y-координата игрока
         """
+
         self.x = start_x
         self.y = start_y
 
@@ -27,6 +28,8 @@ class Player:
             dy (int): Изменение по оси Y (-1, 0, 1)
             maze (Maze): Объект лабиринта для проверки проходимости
         """
+        
         nx, ny = self.x + dx, self.y + dy
+        
         if maze.is_walkable(nx, ny):
             self.x, self.y = nx, ny

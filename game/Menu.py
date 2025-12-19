@@ -10,6 +10,7 @@ class Menu:
         
         Очищает экран и выводит заголовок игры с доступными опциями.
         """
+
         os.system("cls")
         print("=" * 30)
         print("     SCARY MAZE")
@@ -24,4 +25,6 @@ class Menu:
         Returns:
             str: Введенный пользователем выбор
         """
+
         return input("Выберите пункт: ")
+    

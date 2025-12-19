@@ -19,6 +19,7 @@ class Renderer:
             maze (Maze): Объект лабиринта для отрисовки
             player (Player): Объект игрока для отрисовки его позиции
         """
+        
         os.system("cls")
         for y, row in enumerate(maze.grid):
             for x, cell in enumerate(row):
